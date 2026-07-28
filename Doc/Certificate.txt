@@ -1,0 +1,16 @@
+
+Text Books:
+•	Responsive Web Design with HTML5 and CSS" by Ben Frain (Publisher: Packt Publishing)
+•	"CSS Secrets: Better Solutions to Everyday Web Design Problems" by Lea Verou (Publisher: O'Reilly Media)
+•	"JavaScript: The Good Parts" by Douglas Crockford (Publisher: O'Reilly Media)
+
+Online Reference
+•	https://www.w3schools.com/HOWTO/howto_blog_become_frontenddev.asp
+•	https://www.geeksforgeeks.org/web-tech/web-technology/
+•	https://www.educative.io/courses/learn-html-css-javascript-from-scratch
+•	https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css
+
+Free Certifications (By Cisco Networking Academy)
+•	https://www.netacad.com/courses/html-essentials?courseLang=en-US
+•	https://www.netacad.com/courses/css-essentials?courseLang=en-US
+•	https://www.netacad.com/courses/javascript-essentials-1?courseLang=en-US
