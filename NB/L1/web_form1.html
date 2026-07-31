@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Web Form1</title>
+</head>
+<body>
+<form method="post">
+	<table border="0">
+	<tr>
+		<td>Name</td>
+		<td><input type="text" name="user_name" id="user_name" placeholder="Enter name" /></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name="user_pwd" id="user_pwd" /></td>
+	</tr>
+	<tr>
+		<td>Address</td>
+		<td><textarea rows="6" cols="33" id="user_addr" name="user_addr"></textarea></td>
+	</tr>
+
+	
+	<tr>
+		<td>Country</td>
+		<td>
+			<select id="country_dd" name="country_dd" multiple>
+			<option value="">Select Country</option>
+			<option value="Ind">India</option>
+			<option value="US">USA</option>
+			<option value="AU" selected>Aus</option>
+			<option value="JP">Japan</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td>
+		<input type="radio" name="gender" id="gender_male" value="male" />Male
+		<input type="radio" name="gender" id="gender_female" value="female" checked />Female
+		</td>
+
+	</tr>
+	<tr>
+		<td>Hobby</td>
+		<td>
+		<input type="checkbox" name="hobby" id="hobby1" value="cooking" />Cooking
+		<input type="checkbox" name="hobby" id="hobby2" value="gardening" />Gardening
+		<input type="checkbox" name="hobby" id="hobby3" value="cricket" checked />Playing Cricket
+		</td>
+	</tr>
+
+
+	<tr>
+		<td colspan="2">
+		<input type="submit" value="Signup!" name="submit_btn" id="submit_btn" />
+		<input type="reset" value="Clear" name="reset_btn" id="reset_btn" />
+		<button id="simple_btn" name="simple_btn">Click Me!</button>
+		</td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
