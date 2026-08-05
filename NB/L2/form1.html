@@ -3,11 +3,11 @@
 	<title>Web Form</title>
 </head>
 <body>
-	<form method="post">
+	<form method="get">
 	<table align="center" border="1" cellpadding="20" cellspacing="0" width="80%">
 	<tr>
 		<td><label for="user_name">Username:</label></td>
-		<td><input type="text" id="user_name" name="user_name" /></td>
+		<td><input type="text" id="user_name" name="user_name" required /></td>
 
 	</tr>
 	<tr>
@@ -34,6 +34,35 @@
 		</select>
 		</td>
 	</tr>
+	
+	<tr>
+		<td><label for="male">Gender</label></td>
+		<td>
+		<input type="radio" name="gender" id="male">Male
+		<input type="radio" name="gender" id="female" checked> Female
+		</td>
+
+	</tr>
+	
+	<tr>
+		<td>Hobby</td>
+		<td>
+		<input type="checkbox" id="gardening" name="hobby" checked /><label for="gardening">Gardening</label>
+		<input type="checkbox" id="swiming" name="hobby" /><label for="swiming">Swiming</label>
+		<input type="checkbox" id="cricket" name="hobby" /><label for="cricket">Cricket</label>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><label for="">Email</label></td>
+		<td><input type="email" id="user_email" name="user_email" required /></td>
+	</tr>
+	<tr>
+		<td><label for="">Age</label></td>
+		<td><input type="number" id="user_age" name="user_age" required /></td>
+	</tr>
+
+
 	<tr>
 		<td colspan="2"><input type="submit" name="submit_btn" id="submit_btn" value="Submit" /></td>
 	</tr>
@@ -41,3 +70,15 @@
 	</form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

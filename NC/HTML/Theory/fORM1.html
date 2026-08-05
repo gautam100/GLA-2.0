@@ -4,27 +4,52 @@
 	<title>Web Form1</title>
 </head>
 <body>
-<form>
+<form method="post">
 <table align="center" border="1" cellpadding="5" cellspacing="0" width="70%">
 	<tr>
-		<td>Username</td>
-		<td><input type="text" /></td>
+		<td><label for="user_name">Username</label></td>
+		<td><input type="text" id="user_name" name="user_name" /></td>
 	</tr>
 	<tr>
-		<td>Password</td>
-		<td><input type="password" /></td>
+		<td><label for="user_pwd">Password</label></td>
+		<td><input type="password" id="user_pwd" name="user_pwd" /></td>
 	</tr>
 	<tr>
 		<td>Address</td>
 		<td>
-		<textarea rows="6" cols="36"></textarea>
+		<textarea rows="6" cols="36" id="user_addr" name="user_addr"></textarea>
 		</td>
+
 	</tr>
 	<tr>
+		<td>Car</td>
+		<td>
+		<select name="car_dd" id="car_dd" multiple>
+			<option value= "">select</option>		
+			<option value="Maruti">Maruti123</option>
+			<option value="Mahindra" selected>Mahindra</option>
+			<option value="hundai">Hundai</option>
+			<option value="kia">Kia</option>
+		</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>Hobby</td>
+		<td>
+			<input type="checkbox" id="hobby1" name="hobby" value="cooking" />Cooking
+			<input type="checkbox" id="hobby2" name="hobby" value="gardening" />Gardening
+			<input type="checkbox" id="hobby3" name="hobby" value="Cricket" />Cricket
+		</td>
+	</tr>
+
+	<tr>
 		<td colspan="2">
-		<input type="submit" value="Sign Up!" />
+		<input type="submit" value="Sign Up!" name="submit_btn" />
 		<input type="reset" value="Reset" name="reset_btn" />
 		</td>
+
+		
 	</td>
 </table>
 </form>
