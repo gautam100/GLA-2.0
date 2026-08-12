@@ -8,9 +8,12 @@
 .box {
   width: 280px;
   height: 120px;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
   float: left;
   margin: 20px;
+}
+.extra {
+  width: 650px;
 }
 #sub-header {
   background-color: #ecf4fd;
@@ -34,8 +37,12 @@
   float: right;
 }
 .my-dp img {
-  border-radius: 100px;
-  height: 234px;
+  margin-top: 10px;
+  border-radius: 126px;
+  height: 260px;
+  width: 260px;
+  border: 2px solid #fff;
+  object-fit: cover;
 }
 
 .content {
@@ -44,23 +51,33 @@
   min-height: 350px;
   height: auto;
 }
+h3 {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #000;
+}
 .about-me {
-  width: 200px;
-  border: 1px solid #000;
+  width: 300px;
+  border: 0px solid #000;
   height: 220px;
   margin-left: 120px;
   float: left;
 }
+.about-me p{
+    text-align: justify;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
 .skills {
   width: 250px;
-  border: 1px solid #000;
+  border: 0px solid #000;
   height: 220px;
   margin-left: 120px;
   float: left;
 }
 .education {
   width: 450px;
-  border: 1px solid #000;
+  border: 0px solid #000;
   height: 220px;
   margin-left: 120px;
   float: left;
