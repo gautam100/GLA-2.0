@@ -1,0 +1,19 @@
+.header{
+    width: 95%;
+    height: 180px;
+    background-color: #082145;
+}
+.logo-box{
+    width: 200px;
+    height: 160px;
+    border: 1px dotted #FFF;
+    float: left;
+    color: #FFF;
+}
+.menu-box{
+    width: 600px;
+    height: 160px;
+    border: 1px dotted #FFF;
+    color: #FFF;
+    float: right;
+}
