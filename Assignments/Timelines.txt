@@ -1,0 +1,18 @@
+Assignments Timeline:
+
+1st Lab Assignment & Theory Assignment : 22 Aug
+2nd Lab Assignment & Theory Assignment : 22 Sep
+3rd Lab Assignment & Theory Assignment : 22 Oct
+4th Lab Assignment & Theory Assignment : 22 Nov
+
+
+
+
+--------------------------------------
+Project Timelines:
+
+1) Synopsis: By 30/July
+2) SRS: By 15/Aug
+3) Static UI Design: 15/Sep
+4) Dynamic JS Coding: 30/Oct 
+5) Implementation of React: 01/Dec
