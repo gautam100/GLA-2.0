@@ -1,0 +1,55 @@
+/* CSS for structure begins*/
+.header{
+    width: 99%;
+    height: 120px;
+    border: 1px solid #000;
+}
+#content-area{
+    width:99%;
+    height: 500px;
+    border: 1px solid #000;
+}
+.left-panel{
+    width: 240px;
+    height:436px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted #000;
+    float:left;
+}
+.right-panel{
+    width: 1112px;
+    height:436px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px dotted #000;
+    float:left;
+}
+footer{
+    width: 99%;
+    height:90px;
+    border:1px solid #000;
+}
+/* CSS for structure ends*/
+
+.logo{
+    width: 200px;
+    height: 105px;
+    margin: 10px;
+    background-color: rgb(64, 208, 208);
+    float:left;
+}
+.search-bar{
+    width: 1237px;
+    height: 105px;
+    margin: 10px 10px 10px;
+    background-color: rgb(225, 228, 228);
+    float:left;
+    text-align: center;
+}
+#search{
+    height: 40px;
+    width: 500px;
+    border-radius:12px;
+    font-size:20px;
+}

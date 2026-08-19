@@ -1,0 +1,11 @@
+.google-font{
+      font-family: "Sofia", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+}
+
+.another-font{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 19px;
+}
