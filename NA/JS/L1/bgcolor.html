@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #000;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" class="box" onmouseover="detectDiv('1')" onmouseout="blank()">DIV 1</div>
+    <div id="div2" class="box" onmouseover="detectDiv('2')" onmouseout="blank()">DIV 2</div>
+    <div id="div3" class="box" onmouseover="detectDiv('3')" onmouseout="blank()">DIV 3</div>
+    <div id="result" style="width:400px; height: 100px; border: 1px dotted #000;"></div>
+    <script>
+      function detectDiv(num) {
+        //debugger;
+        if (num === '1') {
+          document.getElementById("result").innerHTML =
+            "You are at the top of Div1";
+        } else if (num === '2') {
+          document.getElementById("result").innerHTML =
+            "You are at the top of Div2";
+        } else if (num === '3') {
+          document.getElementById("result").innerHTML =
+            "You are at the top of Div3";
+        }
+      }
+      function blank(){
+        document.getElementById("result").innerHTML = ""
+      }
+    </script>
+  </body>
+</html>
