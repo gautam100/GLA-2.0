@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <svg id="svg1" height="500" width="500" style="background-color: yellow">
+      <circle r="55" cx="250" cy="250" fill="red" />
+    </svg>
+    <input type="number" id="radius_inp" placeholder="Enter Radius" />
+    <button onclick="circleSize()">Change Circle</button>
+    <script>
+      let circleSize = function () {
+        let r = document.getElementById("radius_inp").value;
+        document.getElementById("svg1").innerHTML =
+          "<circle r='" + r + "' cx='250' cy='250' fill='green' />";
+      };
+    </script>
+  </body>
+</html>

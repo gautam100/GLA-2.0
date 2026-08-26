@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <input type="number" id="radius" />
+    <button onclick="changeSize()">Click</button>
+    <div id="area"></div>
+
+    <svg id="svg1" height="500" width="500" style="background-color: yellow">
+      <circle r="100" cx="250" cy="250" fill="green" />
+    </svg>
+
+    <script>
+      function changeSize(){
+          let r = document.getElementById("radius").value
+          document.getElementById("svg1").innerHTML = "<circle r='"+r+"' cx='250' cy='250' fill='green' />"
+          document.getElementById("area").innerHTML = "Area of circle is:"+3.141*r*r
+        }
+    </script>
+  </body>
+</html>
