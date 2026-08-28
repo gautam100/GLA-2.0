@@ -13,6 +13,7 @@ Project Timelines:
 
 1) Synopsis: By 30/July
 2) SRS: By 15/Aug
-3) Static UI Design: 15/Sep
-4) Dynamic JS Coding: 30/Oct 
-5) Implementation of React: 01/Dec
+3) User Flow Diagram: By 04/Sep
+4) Static UI Design: 15/Sep
+5) Frontend development / Dynamic JS Coding: 30/Oct 
+6) *Implementation of React: 01/Dec
