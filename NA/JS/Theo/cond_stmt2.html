@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <select id="day_dd">
+      <option value="">Select Day</option>
+      <option value="mon">Monday</option>
+      <option value="tue">Tuesday</option>
+      <option value="wed">Wednesday</option>
+      <option value="thrus">Thrusday</option>
+      <option value="fri">Friday</option>
+      <option value="sat">Saturday</option>
+      <option value="sun">Sunday</option>
+    </select>
+    <button onclick="prnAboutDay()">Click</button>
+    <div id="res"></div>
+    <script>
+      function prnAboutDay() {
+        let day = document.getElementById("day_dd").value;
+        let elem = document.getElementById("res");
+        if (day === "mon") {
+          elem.innerHTML = "<h2>Monday is the first day of week</h2>";
+        } else if (day === "tue") {
+          elem.innerHTML = "<h2>Tuesday is the second day of week</h2>";
+        } else if (day === "wed") {
+          elem.innerHTML = "<h2>Wednesday is the third day of week</h2>";
+        } else if (day === "thrus") {
+          elem.innerHTML = "<h2>Thrusday is the fourth day of week</h2>";
+        } else if (day === "fri") {
+          elem.innerHTML = "<h2>Friday is the fifth day of week</h2>";
+        } else if (day === "sat") {
+          elem.innerHTML = "<h2>Saturday is weekend!</h2>";
+        } else if (day === "sun") {
+          elem.innerHTML = "<h2>Sunday is the weekend!!!</h2>";
+        } else {
+          elem.innerHTML = "<h2>Invalid selection</h2>";
+        }
+      }
+    </script>
+  </body>
+</html>

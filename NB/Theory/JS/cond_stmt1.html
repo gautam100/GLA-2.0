@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Conditional Statements</h1>
+        <div id="err_container" style="color:red;"></div>
+        <input type="text" id="user_name" placeholder="Enter user name" />
+        <br />
+        <input type="password" id="user_pwd" placeholder="Enter Password" />
+        <button onclick="validation()">Click</button>
+        
+        <script>
+            function validation(){
+                let user = document.getElementById("user_name").value
+                let pwd =  document.getElementById("user_pwd").value
+                let msg = ""
+                if(user === ""){
+                    msg += "Please enter user name"
+                }else if(pwd === ""){
+                    msg += "Please enter password!"
+                }
+                document.getElementById("err_container").innerHTML = msg
+            }
+        </script>
+    </body>
+</html>

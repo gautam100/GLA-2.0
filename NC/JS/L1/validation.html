@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <span id="err1" style="color: red"></span>
+    <br />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <span id="err2" style="color: red"></span>
+    <br />
+    <button onclick="doSum()">Sum</button>
+    <div id="res"></div>
+    <script>
+      function doSum() {
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        if (validation(a, b)) {
+          let sum = parseInt(a) + parseInt(b);
+          document.getElementById("res").innerHTML = sum;
+        }
+      }
+      function validation(num1, num2) {
+        if (num1 === "") {
+          document.getElementById("err1").innerHTML =
+            "Please enter first number!";
+          document.getElementById("num1").style.border = "1px solid red";
+          return false;
+        } else {
+          document.getElementById("err1").innerHTML = "";
+          document.getElementById("num1").style.border = "1px solid black";
+        }
+        if (num2 === "") {
+          document.getElementById("err2").innerHTML =
+            "Please enter second number!";
+          document.getElementById("num2").style.border = "1px solid red";
+          return false;
+        } else {
+          document.getElementById("err2").innerHTML = "";
+          document.getElementById("num2").style.border = "1px solid #000";
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

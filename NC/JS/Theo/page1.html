@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="err_container" style="color:red;"></div>
+        <input type="text" id="user_name" placeholder="Enter user name" />
+        <br />
+        <input type="password" id="user_pwd" placeholder="Enter password" />
+        <br />
+        <button onclick="validation()">Click</button>
+        <script>
+            function validation(){
+                let elem = document.getElementById("err_container")
+                if(document.getElementById("user_name").value === ""){
+                    elem.innerHTML = "Please enter user name!<br />"
+                    return false
+                }else{
+                  elem.innerHTML = ""  
+                }
+
+                if(document.getElementById("user_pwd").value === ""){
+                    elem.innerHTML += "Please enter password!!<br />"
+                    return false
+                }else{
+                  elem.innerHTML = ""  
+                }
+            }
+        </script>
+    </body>
+</html>

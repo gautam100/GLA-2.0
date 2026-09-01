@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <button onclick="check()">Click</button>
+    <div id="res"></div>
+    <script>
+      function check() {
+        let a = parseInt(document.getElementById("num1").value);
+        let b = parseInt(document.getElementById("num2").value);
+
+        let elem = document.getElementById("res");
+
+        a > b
+          ? (elem.innerHTML = `${a} is greater`)
+          : (elem.innerHTML = `${b} is greater`);
+      }
+    </script>
+  </body>
+</html>
