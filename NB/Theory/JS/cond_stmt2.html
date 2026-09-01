@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .box {
+        width: 120px;
+        height: 100px;
+        margin: 10px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="box"
+      id="box1"
+      style="background-color: red;"
+      onmouseover="detectBox('red')" onmouseout="detectBox()"
+    ></div>
+    <div
+      class="box"
+      id="box2"
+      style="background-color: green"
+      onmouseover="detectBox('green')" onmouseout="detectBox()"
+    ></div>
+    <div
+      class="box"
+      id="box3"
+      style="background-color: yellow"
+      onmouseover="detectBox('yellow')" onmouseout="detectBox()"
+    ></div>
+    <div id="notification"></div>
+    <script>
+        function detectBox(color=''){
+            //debugger;
+            let elem = document.getElementById("notification")
+            if(color === "red"){
+                elem.innerHTML = "<h1>Red Box</h1>"
+            }else if(color === "green"){
+                elem.innerHTML = "<h1>Green Box</h1>"
+            }else if(color === "yellow"){
+                elem.innerHTML = "<h1>Yellow Box</h1>"
+            }else{
+                elem.innerHTML = ""
+            }
+
+        }
+
+    </script>
+  </body>
+</html>

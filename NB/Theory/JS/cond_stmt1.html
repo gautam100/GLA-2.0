@@ -17,8 +17,9 @@
                 let pwd =  document.getElementById("user_pwd").value
                 let msg = ""
                 if(user === ""){
-                    msg += "Please enter user name"
-                }else if(pwd === ""){
+                    msg += "Please enter user name<br />"
+                } 
+                if(pwd === ""){
                     msg += "Please enter password!"
                 }
                 document.getElementById("err_container").innerHTML = msg
