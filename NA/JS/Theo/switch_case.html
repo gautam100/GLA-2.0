@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch case</title>
+        <style>
+            .box{
+                width: 120px;
+                height: 100px;
+                margin: 10px;
+                float:left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="div1" style="background-color:red;" onmouseover="chkBoxColor('red')" onmouseout="chkBoxColor()"></div>
+        <div class="box" id="div2" style="background-color:green;" onmouseover="chkBoxColor('green')" onmouseout="chkBoxColor()"></div>
+        <div class="box" id="div3" style="background-color:yellow;" onmouseover="chkBoxColor('yellow')" onmouseout="chkBoxColor()"></div>
+
+        <p id="res"></p>
+        <script>
+            function chkBoxColor(color=''){
+                let elem = document.getElementById("res")
+                switch (color){
+                    case 'red': 
+                    elem.style.color = "red"
+                    elem.innerHTML = "<strong>Red</strong>"
+                    break
+
+                    case 'green': 
+                    elem.style.color = "green"
+                    elem.innerHTML = "<strong>Green</strong>"
+                    break
+                    
+                    case 'yellow': 
+                    elem.style.color = "yellow"
+                    elem.innerHTML = "<strong>Yellow</strong>"
+                    break
+
+                    default:
+                    elem.innerHTML = ""
+
+                    
+                }
+            }
+        </script>
+    </body>
+</html>
