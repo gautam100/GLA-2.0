@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <input type="text" placeholder="Enter text" onkeyup="keyPressed(this.value)" />
+        <button onclick="doClick()">Click Me!</button>
+        <script>           
+            function doClick(){
+                alert("Hello World!")
+            }
+            function keyPressed(userInp){
+                alert("Hey you typed something!"+userInp)
+            }
+        </script>
+    </body>
+</html>

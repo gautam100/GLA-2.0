@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ternary Operator</title>
+  </head>
+  <body>
+    <select id="my_dd" onchange="fn()">
+      <option value="">Select Country</option>
+      <option value="In">India</option>
+      <option value="US">USA</option>
+      <option value="JP">Japan</option>
+    </select>
+    <div id="result" style="color:red;"></div>
+
+    <script>
+      let fn = function () {
+        let country = document.getElementById("my_dd").value;
+        country === "In"
+          ? (document.getElementById("result").innerHTML =
+              "<h1>You selected India</h1>")
+          : (document.getElementById("result").innerHTML =
+              "<h1>You selection is not India</h1>");
+      };
+    </script>
+  </body>
+</html>

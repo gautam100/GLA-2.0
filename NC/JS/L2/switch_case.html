@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .box {
+        width: 120px;
+        height: 100px;
+        margin: 12px;
+        display: flex;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="div1"
+      class="box"
+      style="background-color: red"
+      onmouseover="checkColor('red')"
+      onmouseout="checkColor('')"
+    ></div>
+    <div
+      id="div2"
+      class="box"
+      style="background-color: green"
+      onmouseover="checkColor('green')"
+      onmouseout="checkColor('')"
+    ></div>
+    <div
+      id="div3"
+      class="box"
+      style="background-color: yellow"
+      onmouseover="checkColor('yellow')"
+      onmouseout="checkColor('')"
+    ></div>
+    <br />
+    <div id="result">Result</div>
+    <script>
+      function checkColor(color = "") {
+        let elem = document.getElementById("result");
+        switch (color) {
+          case "red":
+            elem.style.color = "red";
+            elem.innerHTML = "<h1>Red</h1>";
+            break;
+
+          case "green":
+            elem.style.color = "green";
+            elem.innerHTML = "<h1>Green</h1>";
+            break;
+
+          case "yellow":
+            elem.style.color = "yellow";
+            elem.innerHTML = "<h1>Yellow</h1>";
+            break;
+
+          default:
+            elem.innerHTML = "";
+        }
+      }
+    </script>
+  </body>
+</html>

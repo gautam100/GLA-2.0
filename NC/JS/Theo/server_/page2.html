@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <select id="day_dd" onchange="prnDayInfo()">
+      <option value="">Select Day</option>
+      <option value="mon">Monday</option>
+      <option value="tue">Tuesday</option>
+      <option value="wed">Wednesday</option>
+      <option value="thrus">Thrusday</option>
+      <option value="fri">Friday</option>
+      <option value="sat">Saturday</option>
+      <option value="sun">Sunday</option>
+    </select>
+    <div id="info"></div>
+    <script>
+      function prnDayInfo() {
+        let day = document.getElementById("day_dd").value;
+        let elem = document.getElementById("info");
+        if (day === "mon") {
+          info.innerHTML = "<h2>This is first day of week</h2>";
+        } else if (day === "tue") {
+            info.innerHTML = "<h2>This is second day of week</h2>";
+        } else if (day === "wed") {
+            info.innerHTML = "<h2>This is third day of week</h2>";
+        } else if (day === "thrus") {
+            info.innerHTML = "<h2>This is fourth day of week</h2>";
+        } else if (day === "fri") {
+            info.innerHTML = "<h2>This is fifth day of week</h2>";
+        } else if (day === "sat") {
+            info.innerHTML = "<h2>This is sixth day of week</h2>";
+        } else if (day === "sun") {
+            info.innerHTML = "<h2>This is weekend!!!</h2>";
+        } else {
+            info.innerHTML = "Invalid entry!";
+        }
+      }
+    </script>
+  </body>
+</html>

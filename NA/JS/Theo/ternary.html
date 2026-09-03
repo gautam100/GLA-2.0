@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ternary Operator</title>
+  </head>
+  <body>
+    <input type="number" id="num1" placeholder="Enter First Number" />
+    <input type="number" id="num2" placeholder="Enter Second Number" />
+    <button onclick="chkHighest()">Click</button>
+    <div id="res"></div>
+    <script>
+      function chkHighest() {
+        let a = parseInt(document.getElementById("num1").value)
+        let b = parseInt(document.getElementById("num2").value)
+
+        a > b
+          ? (document.getElementById("res").innerHTML = a + " is highest")
+          : (document.getElementById("res").innerHTML = b + " is highest");
+      }
+    </script>
+  </body>
+</html>
