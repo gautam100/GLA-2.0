@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <select id="country_dd">
+            <option value="">Select</option>
+            <option value="In">India</option>
+            <option value="USA">USA</option>
+            <option value="JP">Japan</option>
+        </select>
+        <input type="number" id="age" placeholder="Enter Age" />
+        <button onclick="chkEligibility()">Check Eligibility</button>
+        <div id="result"></div>
+        <script>
+            function chkEligibility(){
+                let country = document.getElementById("country_dd").value
+                let age = document.getElementById("age").value
+                let resContainer = document.getElementById("result")
+                if(country === "In"){
+                    if(age>=18){
+                        resContainer.innerHTML ="Eligible for Vote!"
+                    }else{
+                        resContainer.innerHTML ="Not Eligible for Vote because age is less than 18!"
+                    }
+                }else{
+                        resContainer.innerHTML ="Not Eligible for Vote because nationality is not indian!"
+                }
+            }
+        </script>
+    </body>
+</html>

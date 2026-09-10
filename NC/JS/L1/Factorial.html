@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="usr_inp" placeholder="Enter number" />
+    <button onclick="getFactorial()">Calculate Factorial</button>
+    <div id="result"></div>
+    <script>
+      function getFactorial() {
+        //debugger;
+        //num  = 5
+        let num = document.getElementById("usr_inp").value;
+        let fact = 1;
+        for (let i = 1; i <= num; i++) {
+          fact = fact * i;
+        }
+        //console.log("Factorial of "+num+" is: "+fact)
+        document.getElementById("result").innerHTML =
+          "Factorial of " + num + " is: " + fact;
+      }
+    </script>
+  </body>
+</html>
