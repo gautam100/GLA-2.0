@@ -3,7 +3,6 @@ function myCart() {
     ["Polo Tshirt", 1200],
     ["Reebok Sport Shoe", 3600],
     ["Denim Shirt", 1800],
-    ["Park Avenue Shirt", 2400],
   ];
 
   let tbody = "";

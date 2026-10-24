@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information</title>
+  </head>
+  <body>
+    <table
+      align="center"
+      width="40%"
+      cellpadding="10"
+      cellspacing="0"
+      border="1"
+      rules="groups"
+    >
+      <tr>
+        <td><label for="user_name">Name</label></td>
+        <td><input type="text" name="user_name" id="user_name" /></td>
+      </tr>
+      <tr>
+        <td><label for="user_email">Email</label></td>
+        <td><input type="email" name="user_email" id="user_email" /></td>
+      </tr>
+      <tr>
+        <td><label for="user_age">Age</label></td>
+        <td><input type="number" name="user_age" id="user_age" /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input
+            type="button"
+            name="submit_btn"
+            value="Submit"
+            onclick="submitForm()"
+          />
+        </td>
+      </tr>
+    </table>
+    <script>
+      const userList = [];
+      function submitForm() {
+        const userData = {};
+        userData.name = document.getElementById("user_name").value;
+        userData.email = document.getElementById("user_email").value;
+        userData.age = document.getElementById("user_age").value;
+
+        userList.push(userData);
+        console.log(userList);
+      }
+    </script>
+  </body>
+</html>

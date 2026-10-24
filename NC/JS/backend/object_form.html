@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+    <table align="center" border="1" cellpadding="5" cellspacing="0" width="50%">
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="user_name" /></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td><input type="number" id="user_age" /></td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td><input type="text" id="user_dept" /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <input type="button" value="Submit" onclick="submitData()" />
+            <input type="reset" value="Clear" />
+        </td>
+      </tr>
+    </table>
+    </form>
+    <table align="center" border="1" cellpadding="5" cellspacing="0" width="50%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody id="tab_body">
+            ....
+        </tbody>
+    </table>
+    <script src="object_form.js"></script>
+  </body>
+</html>
