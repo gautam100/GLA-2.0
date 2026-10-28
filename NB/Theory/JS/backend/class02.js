@@ -1,6 +1,5 @@
 //Imagine Student is a class
-function Student(name = "") 
-{
+function Student(name = "") {
   console.log("My name is :" + name);
   
 }

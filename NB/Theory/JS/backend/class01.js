@@ -1,4 +1,5 @@
 class Reportcard {
+
   constructor(a, b, c) {
     this.math = a;
     this.sci = b;
@@ -7,6 +8,7 @@ class Reportcard {
   totalMarks() {
     return this.math + this.sci + this.eng
   }
+  
 }
 
 const obj = new Reportcard(80, 75, 90);
